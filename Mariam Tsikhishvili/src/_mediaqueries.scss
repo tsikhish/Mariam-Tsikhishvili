@@ -1,0 +1,242 @@
+@import "./mixins";
+@import "./reset";
+@import "./variables";
+
+@media only screen and (max-width: 320px) {
+  .header {
+    &__sec {
+      max-width: $maxwidthmobile;
+      width: 100%;
+      padding: 0;
+      padding: 15px 25px;
+      &__nav {
+        display: none;
+      }
+      &__button {
+        display: none;
+      }
+      &__burgermenu {
+        display: block;
+        font-size: 32px;
+      }
+    }
+  }
+  .fas.fa-play.play-icon.firstsec__content__button__i {
+    display: none;
+  }
+  .firstsec {
+    &__image {
+      height: 475px;
+    }
+    &__content {
+      max-width: $maxwidthmobile;
+      padding: 0;
+      &__text {
+        width: 100%;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+      }
+      &__button {
+        margin: 30px 0;
+        @include flexer;
+        &__link1 {
+          font-size: 16px;
+          margin-right: 0;
+        }
+        &__link2 {
+          display: none;
+        }
+        &__i {
+          display: none;
+        }
+      }
+      &__div {
+        display: none;
+      }
+    }
+  }
+  .About {
+    &__maindiv {
+      flex-direction: column;
+      max-width: $maxwidthmobile;
+      padding: 60px 15px 30px 15px;
+      &__content {
+        &__div1 {
+          padding: 0;
+          &__title {
+            font-size: 8px;
+          }
+          &__p1 {
+            font-size: 20px;
+            margin: 35px;
+            text-align: center;
+          }
+          &__p2 {
+            font-size: 8px;
+            line-height: 12px;
+            margin-bottom: 0;
+          }
+          &__button {
+            padding-top: 12px;
+            padding-bottom: 85px;
+            justify-content: center;
+            display: flex;
+            &__link {
+              padding: 12px 4px;
+              font-size: 8px;
+              color: #fefeff;
+            }
+          }
+        }
+      }
+      &__div {
+        &__img {
+          width: 270px;
+          height: 320px;
+        }
+        &__i {
+          font-size: 12px;
+          top: 150px;
+          right: 120px;
+          padding: 11px 10px 11px 13px;
+        }
+      }
+    }
+  }
+  .div2 {
+    display: none;
+  }
+  .WhatWeDo {
+    &__main {
+      flex-direction: column;
+      max-width: $maxwidthmobile;
+      padding: 25px 20px;
+      &__text {
+        padding: 0;
+        &__title {
+          font-size: 8px;
+        }
+        &__headp {
+          font-size: 20px;
+          margin: 25px 0;
+          padding: 0 40px;
+          text-align: center;
+        }
+        &__p2 {
+          font-size: 12px;
+          text-align: left;
+          line-height: 20px;
+        }
+        &__secondary {
+          display: none;
+        }
+      }
+      &__img {
+        margin: 30px;
+        width: 150px;
+        height: 225px;
+      }
+    }
+  }
+  .Projects {
+    max-width: 60px 0;
+    &__main {
+      flex-direction: column;
+      max-width: $maxwidthmobile;
+      padding: 8px;
+      &__title {
+        text-align: center;
+        padding: 0;
+      }
+      &__text {
+        display: none;
+      }
+      &__cards {
+        flex-direction: column;
+        &__content {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .events {
+    margin: 0;
+    &__main {
+      max-width: $maxwidthmobile;
+      padding: 0 10px;
+      &__titlediv {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        &__title::after {
+          display: none;
+        }
+      }
+      &__date {
+        flex-direction: column;
+        margin: 30px 0;
+        &__div1 {
+          width: 100%;
+          margin-bottom: 20px;
+          &__p2 {
+            line-height: 18px;
+            ::after {
+              display: none;
+            }
+            &__span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .CTA {
+    margin-top: 36px;
+    margin-bottom: 70px;
+    &__div {
+      max-width: $maxwidthmobile;
+      padding: 0 5px;
+      &__img {
+        height: 230px;
+      }
+      &__content {
+        top: 16px;
+        &__text {
+          width: 85%;
+          font-size: 20px;
+        }
+      }
+      &__buttons {
+        flex-direction: column;
+        bottom: 17px;
+        gap: 10px;
+      }
+    }
+  }
+  .footer {
+    &__content {
+      max-width: $maxwidthmobile;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      &__left {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        justify-content: center;
+        text-align: center;
+        &__ul {
+          display: none;
+        }
+      }
+      &__right {
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+        margin: 0;
+      }
+    }
+  }
+}

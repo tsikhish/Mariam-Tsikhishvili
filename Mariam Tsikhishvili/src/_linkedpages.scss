@@ -1,0 +1,126 @@
+@import "./mixins";
+@import "./reset";
+@import "./variables";
+
+//about Us page
+.aboutusMain {
+  @include flexer;
+  &__section {
+    max-width: $maxwidth;
+    width: 100%;
+    padding: $mainpadding;
+    &__div {
+      max-width: $maxwidth;
+      width: 100%;
+      padding: 60px 100px;
+      background-color: $yellow;
+      display: grid;
+      grid-template-columns: 50% auto;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 20px;
+      &__content {
+        width: 90%;
+        &__title {
+          @include sectitle;
+        }
+        &__text {
+          color: rgba(0, 0, 0, 0.6);
+          font-weight: 400;
+          font-size: 16px;
+          &__span {
+            color: #000;
+            font-weight: 700;
+            font-size: $heading2;
+          }
+        }
+        &__flexdiv {
+          margin-top: 32px;
+          @include flexer($position: flex-start);
+          gap: 32px;
+          &__p {
+            color: #000;
+            font-weight: 500;
+            font-size: 24px;
+          }
+          &__span {
+            color: rgba(0, 0, 0, 0.6);
+            font-weight: 500;
+            font-size: 12px;
+          }
+        }
+      }
+      &__img {
+        object-fit: cover;
+        width: 600px;
+        height: 450px;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+//What We Do page
+.About__maindiv__image {
+  object-fit: cover;
+  height: 384px;
+  width: 476px;
+  border-radius: 20px;
+}
+
+//Contact Us
+.contactuspage {
+  background-color: $yellow-light;
+  @include flexer;
+  &__sec {
+    max-width: $maxwidth;
+    width: 100%;
+    padding: $mainpadding;
+    &__info {
+      width: 550px;
+      padding: 0 100px;
+      &__title {
+        @include sectitle;
+      }
+      &__mainp {
+        font-size: 24px;
+        font-weight: 700;
+        color: $primary-text;
+        padding-bottom: 16px;
+        border-bottom: 1px solid $border-color;
+      }
+      &__p1 {
+        width: 50%;
+        margin: 32px 0;
+        font-size: 20px;
+        font-weight: 700;
+        color: $primary-text;
+      }
+      &__p2 {
+        margin: 32px 0;
+        font-size: 20px;
+        font-weight: 700;
+        color: $primary-text;
+      }
+      &__mainspan {
+        margin-right: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        color: $primary-text;
+      }
+      &__span {
+        font-size: 16px;
+        font-weight: 400;
+        color: $secondary-text;
+      }
+    }
+  }
+}
+.mapimgdiv {
+  margin-bottom: 170px;
+  &__img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+  }
+}
